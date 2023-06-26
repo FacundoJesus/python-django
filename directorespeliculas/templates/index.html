@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Películas Home</h1>
+
+<p>Bienvenido a la <em>Tienda Online de Películas</em></p>
+
+<h2>Dynamic content</h2>
+
+<p>Tienda online de Películas:</p>
+<ul>
+    <li><strong>Películas:</strong>{{ cantidad_peliculas }}</li>
+    <li><strong>Copias:</strong>{{ cantidad_instancias }}</li>
+    <li><strong>Disponibilidad de películas:</strong>{{ disponibilidad_peliculas }}</li>
+    <li><strong>Géneros:</strong>{{ cantidad_generos }}</li>
+    <li><strong>Directores:</strong>{{ cantidad_directores }}</li>
+</ul>
+{% endblock %}
